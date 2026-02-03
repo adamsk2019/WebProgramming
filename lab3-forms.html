@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Order Coffee</title>
+    </head>
+    <body>
+        <h1>Your Coffee Order</h1>
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="order_name" />
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="order_email" />
+            </p>
+            <p>
+                <label for="coffee">
+                    <span>What type of Coffee?</span>
+                </label>
+                <select id="coffee" name="coffee_type">
+                    <option value="Latte">Latte</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Americano">Americano</option>
+                    <option value="Espresso">Espresso</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Coffee Size:</legend>
+                <p> <input type="radio" name="size" id="size_1" value="small"> <label for="size_1">Small</label> </p>
+                <p> <input type="radio" name="size" id="size_2" value="medium"> <label for="size_2">Medium</label> </p>
+                <p> <input type="radio" name="size" id="size_3" value="large"> <label for="size_3">Large</label> </p>
+            </fieldset>
+            <fieldset>
+                <legend>Extras:</legend>
+                <div>
+                    <input type="checkbox" id="whippedcream" name="extra" value="whippedcream" />
+                    <label for="coding">Whipped Cream</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="extrashot" name="extra" value="extrashot" />
+                    <label for="coding">Extra Shot</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="almondmilk" name="extra" value="almondmilk" />
+                    <label for="coding">Almond Milk</label>
+                </div>
+            </fieldset>
+            <p>
+                <label for="spl">Special Instructions:</label>               
+                <textarea id="spl" name="special_instructions"></textarea>
+            </p>
+            <div class="button">
+                <button type="submit">Submit Order</button>
+            </div>
+        </form>
+    </body>
+</html>
